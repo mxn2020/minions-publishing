@@ -1,0 +1,28 @@
+{
+    "name": "minions-publishing-workspace",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Platform credentials, publish queue, and post receipts",
+    "type": "module",
+    "license": "MIT",
+    "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
+    "scripts": {
+        "build": "pnpm --filter @minions-publishing/sdk run build && pnpm --filter @minions-publishing/cli run build && pnpm --filter @minions-publishing/docs run build && pnpm --filter @minions-publishing/blog run build && pnpm --filter @minions-publishing/web run build",
+        "deploy:blog": "pnpm --filter @minions-publishing/blog run build && netlify deploy --dir apps/blog/dist --prod",
+        "deploy:docs": "pnpm --filter @minions-publishing/docs run build && netlify deploy --dir apps/docs/dist --prod",
+        "deploy:web": "pnpm --filter @minions-publishing/web run build && netlify deploy --dir apps/web/dist --prod",
+        "test": "pnpm --filter @minions-publishing/sdk run test",
+        "lint": "pnpm --filter @minions-publishing/sdk run build && pnpm --filter @minions-publishing/sdk run lint && pnpm --filter @minions-publishing/cli run lint",
+        "deploy": "pnpm run deploy:blog"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.3"
+    }
+}

@@ -1,6 +1,12 @@
 ---
 name: minions-publishing
-description: Platform credentials, publish queue, and post receipts
+id: OC-0147
+version: 1.0.0
+description: "Platform credentials, publish queue, and post receipts"
+category: ai
+subcategory: general
+tags: ["minion", "ai", "general"]
+comments:
 ---
 
 # minions-publishing — Agent Skills

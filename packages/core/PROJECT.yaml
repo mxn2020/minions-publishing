@@ -1,0 +1,8 @@
+name: "@minions-publishing/sdk"
+project_scope: child
+child_type: sdk
+parent_project: minions-publishing-workspace
+description: "Platform credentials, publish queue, and post receipts"
+priority: high
+deploy_url: null
+tags: null

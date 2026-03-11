@@ -1,0 +1,15 @@
+name: minions-publishing-workspace
+project_scope: main
+project_type: monorepo
+description: "Platform credentials, publish queue, and post receipts"
+tier: idea
+lane: minions
+priority: medium
+oss: true
+stack: [typescript]
+repo: "https://github.com/mxn2020/minions-publishing"
+deploy_url: null
+last_active: 2026-02-23
+tags: [minion, toolbox, ai-agent, automation, minions, publishing]
+notes: null
+id: 1b453109-2a03-42fd-ab29-e3b4486dcd6b

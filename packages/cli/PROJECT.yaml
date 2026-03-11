@@ -6,3 +6,4 @@ description: "CLI for minions-publishing — Platform credentials, publish queue
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox

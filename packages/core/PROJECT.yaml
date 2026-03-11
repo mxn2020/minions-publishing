@@ -6,3 +6,4 @@ description: "Platform credentials, publish queue, and post receipts"
 priority: high
 deploy_url: null
 tags: null
+category: minion-toolbox
